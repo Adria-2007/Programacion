@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Signature';
+  src: url('../fonts/Signature.ttf') format('truetype');
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  scroll-behavior: smooth; 
+}
+
+body { 
+  font-family: 'Poppins', sans-serif; 
+  overflow-y: hidden; 
+  color: #222; 
+}
+
+.navbar { 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background: rgba(255, 255, 255, 0.95); 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.logo { 
+  font-family: 'Signature', cursive; 
+  font-size: 1.6rem; 
+  color: #ff4081; 
+  text-decoration: none; 
+}
+
+.nav-links { 
+  list-style: none; 
+  display: flex; 
+  gap: 1.5rem; 
+}
+
+.nav-item { 
+  text-decoration: none; 
+  color: #333; 
+  font-weight: 500; 
+  transition: color 0.3s; 
+}
+
+.nav-item:hover { 
+  color: #ff4081; 
+}
+
+.section { 
+  height: 100vh; 
+  padding: 100px 10%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.home-section { 
+  background: linear-gradient(135deg, #ff4081, #ff9100); 
+  color: white; 
+  text-align: center; 
+}
+
+.home-section h1 span { 
+  font-weight: 700; 
+}
+
+.socials { 
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.social-icon img { 
+  width: 30px; 
+  margin: 0 10px; 
+  transition: transform 0.3s; 
+}
+
+.social-icon img:hover { 
+  transform: scale(1.2); 
+}
+
+.sobre-section { 
+  background: #fff8f0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.about-container { 
+  display: flex; 
+  gap: 3rem; 
+  align-items: center; 
+  flex-wrap: wrap; 
+}
+
+.about-image img { 
+  max-width: 300px; 
+  border-radius: 20px; 
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1); 
+}
+
+.portfolio-section { 
+  background: #f2f2f2; 
+  text-align: center; 
+}
+
+.projects { 
+  display: flex; 
+  justify-content: center; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
+  margin-top: 2rem; 
+}
+
+.project { 
+  text-decoration: none; 
+  color: #222; 
+  transition: transform 0.3s; 
+}
+
+.project img { 
+  width: 250px; 
+  border-radius: 15px; 
+  transition: box-shadow 0.3s; 
+}
+
+.project:hover img { 
+  box-shadow: 0 0 15px rgba(255, 64, 129, 0.6); 
+}
+
+.more-projects img { 
+  width: 50px; 
+  margin-top: 2rem; 
+  opacity: 0.5; 
+  transition: opacity 0.3s; 
+}
+
+.more-projects img:hover { 
+  opacity: 1; 
+}
+.testimonios-section { 
+  background: #ffe6e6; 
+  text-align: center; 
+}
+
+.columns { 
+  columns: 3 200px; 
+  column-gap: 2rem; 
+  margin-top: 2rem; 
+}
+
+.contacto-section { 
+  background: #fff0f6; 
+  text-align: center; 
+}
+
+.contact-container { 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  margin-top: 2rem; 
+}
+
+.contact-form input, .contact-form textarea { 
+  display: block; 
+  width: 100%; 
+  margin-bottom: 1rem; 
+  padding: 0.8rem; 
+  border: none; 
+  border-radius: 8px; 
+  background: #fff; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.contact-form button { 
+  padding: 0.8rem 1.5rem; 
+  background: #ff4081; 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: background 0.3s; 
+}
+
+.contact-form button:hover { 
+  background: #ff9100; 
+}
